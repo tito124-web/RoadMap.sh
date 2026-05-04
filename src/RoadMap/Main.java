@@ -1,7 +1,9 @@
 package RoadMap;
 
 import RoadMap.Enum.Enum;
-import RoadMap.encapsulaminto.Persona; 
+import RoadMap.Modificador_de_Acceso.Pesona1;
+import RoadMap.encapsulaminto.Persona;
+import RoadMap.typecasting.TypeCasting; 
 
 public class Main {
 
@@ -13,7 +15,8 @@ public class Main {
 		
 		Enum();
 		herencia();
-		
+		modificador_de_acceso();
+		type_casting();
 		
 	}
 	
@@ -50,11 +53,39 @@ public class Main {
 		
 		Persona p1 = new Persona("tito", 18);
 		
-		System.out.println(p1.getNombre());
-		System.out.println(p1.getEdad());
+		System.out.println("El nombre es " +  p1.getNombre());
+		System.out.println("La edad es " + p1.getEdad());
 		
 	}
 	
+	
+	public static void modificador_de_acceso() {
+		
+		Pesona1 p2 = new Pesona1();
+		
+		p2.setNombre("tito");
+		p2.setEdad(18);
+		p2.setPais("Guatemala");
+		p2.setCiudad("Jutiapa");
+		
+		System.out.println("El nombre es " + p2.getNombre());
+		System.out.println("La edad es " + p2.getEdad());
+		System.out.println( "El pais es " + p2.getPais());
+		System.out.println( "La ciudad es " + p2.getCiudad());
+		
+		
+	}
+	
+	public static void type_casting() {
+		TypeCasting t = new TypeCasting();
+		
+		t.intADouble();
+		t.intAString();
+		t.stringAInt();
+		
+		
+		
+		}
 	
 	
 }
