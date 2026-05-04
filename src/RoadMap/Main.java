@@ -1,6 +1,7 @@
 package RoadMap;
 
-import RoadMap.Enum.Enum; 
+import RoadMap.Enum.Enum;
+import RoadMap.encapsulaminto.Persona; 
 
 public class Main {
 
@@ -11,7 +12,7 @@ public class Main {
 		
 		
 		Enum();
-		
+		herencia();
 		
 		
 	}
@@ -43,6 +44,15 @@ public class Main {
 	
 		
 	
+	}
+	
+	public static void herencia() {
+		
+		Persona p1 = new Persona("tito", 18);
+		
+		System.out.println(p1.getNombre());
+		System.out.println(p1.getEdad());
+		
 	}
 	
 	
