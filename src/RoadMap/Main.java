@@ -3,6 +3,7 @@ package RoadMap;
 import RoadMap.Enum.Enum;
 import RoadMap.Exepciones.Exepcion;
 import RoadMap.Modificador_de_Acceso.Pesona1;
+import RoadMap.PasoporReferenciayporValor.ReferenciayporValor;
 import RoadMap.encapsulaminto.Persona;
 import RoadMap.typecasting.TypeCasting; 
 
@@ -19,6 +20,7 @@ public class Main {
 		modificador_de_acceso();
 		type_casting();
 		Excepciones();
+		refernciayvalor();
 	}
 	
 	
@@ -114,6 +116,30 @@ public class Main {
 	        
 	
 	}
+	
+	
+	
+	public static void refernciayvalor() {
+		
+		
+		ReferenciayporValor p = new ReferenciayporValor();
+
+        // ---------- PRIMITIVO ----------
+        System.out.println("--- Primitivo (copia el valor) ---");
+        int numero = 5;
+        System.out.println("Antes: " + numero);
+        p.cambiarNumero(numero);
+        System.out.println("Despues: " + numero); // no cambia porque se mando una copia
+
+        // ---------- OBJETO ----------
+        System.out.println("\n--- Objeto (copia la direccion) ---");
+        int[] arreglo = {1, 2, 3};
+        System.out.println("Antes: " + arreglo[0]);
+        p.cambiarArreglo(arreglo);
+        System.out.println("Despues: " + arreglo[0]); // cambia porque ambos apuntan al mismo arreglo
+    
+	}
+	
 	
 	
 }
