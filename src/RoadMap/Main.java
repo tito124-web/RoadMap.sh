@@ -1,6 +1,7 @@
 package RoadMap;
 
 import RoadMap.Enum.Enum;
+import RoadMap.Exepciones.Exepcion;
 import RoadMap.Modificador_de_Acceso.Pesona1;
 import RoadMap.encapsulaminto.Persona;
 import RoadMap.typecasting.TypeCasting; 
@@ -17,7 +18,7 @@ public class Main {
 		herencia();
 		modificador_de_acceso();
 		type_casting();
-		
+		Excepciones();
 	}
 	
 	
@@ -86,6 +87,33 @@ public class Main {
 		
 		
 		}
+	
+	
+	public static void Excepciones() {
+		
+		
+		
+		
+		
+		  Exepcion ej = new Exepcion();
+
+	        // ---------- EJEMPLO 1 ----------
+	        System.out.println("---------- DIVISION ----------");
+	        try {
+	            ej.dividir(10, 2);  // funciona
+	            ej.dividir(10, 0);  // falla
+	        } catch (ArithmeticException e) {
+	            System.out.println("Error: " + e.getMessage());
+	        }
+
+	        // ---------- EJEMPLO 2 ----------
+	        System.out.println("\n---------- CONVERSION ----------");
+	        ej.convertir("42");   // funciona
+	        ej.convertir("hola"); // falla
+
+	        
+	
+	}
 	
 	
 }
