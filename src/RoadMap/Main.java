@@ -2,6 +2,7 @@ package RoadMap;
 
 import RoadMap.Enum.Enum;
 import RoadMap.Exepciones.Exepcion;
+import RoadMap.Herencia.Usuario;
 import RoadMap.Modificador_de_Acceso.Pesona1;
 import RoadMap.PasoporReferenciayporValor.ReferenciayporValor;
 import RoadMap.encapsulaminto.Persona;
@@ -21,6 +22,7 @@ public class Main {
 		type_casting();
 		Excepciones();
 		refernciayvalor();
+		Herencia();
 	}
 	
 	
@@ -138,6 +140,16 @@ public class Main {
         p.cambiarArreglo(arreglo);
         System.out.println("Despues: " + arreglo[0]); // cambia porque ambos apuntan al mismo arreglo
     
+	}
+	
+	
+	public static void Herencia() {
+		
+		Usuario n = new Usuario("tito",19);
+		
+		n.setNum(20);
+		n.toString();		
+		System.out.println(n.toString());
 	}
 	
 	
