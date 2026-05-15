@@ -3,6 +3,7 @@ package RoadMap;
 import RoadMap.Enum.Enum;
 import RoadMap.Exepciones.Exepcion;
 import RoadMap.Herencia.Usuario;
+import RoadMap.InstaciadeBloke.Instanciabloke;
 import RoadMap.Modificador_de_Acceso.Pesona1;
 import RoadMap.PasoporReferenciayporValor.ReferenciayporValor;
 import RoadMap.encapsulaminto.Persona;
@@ -23,6 +24,7 @@ public class Main {
 		Excepciones();
 		refernciayvalor();
 		Herencia();
+		instancia();
 	}
 	
 	
@@ -152,6 +154,16 @@ public class Main {
 		System.out.println(n.toString());
 	}
 	
+	public static void instancia() {
+		
+		Instanciabloke va = new Instanciabloke();
+		
+		va.mostrar();
+		va.sumar(5);
+		
+		
+		
+	}
 	
 	
 }
