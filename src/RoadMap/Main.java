@@ -6,6 +6,7 @@ import RoadMap.Herencia.Usuario;
 import RoadMap.InstaciadeBloke.Instanciabloke;
 import RoadMap.Modificador_de_Acceso.Pesona1;
 import RoadMap.PasoporReferenciayporValor.ReferenciayporValor;
+import RoadMap.SobreCarga.SobreCarga;
 import RoadMap.encapsulaminto.Persona;
 import RoadMap.typecasting.TypeCasting; 
 
@@ -25,6 +26,7 @@ public class Main {
 		refernciayvalor();
 		Herencia();
 		instancia();
+		sobreCarga();
 	}
 	
 	
@@ -161,6 +163,16 @@ public class Main {
 		va.mostrar();
 		va.sumar(5);
 		
+		
+		
+	}
+	public static void sobreCarga() {
+		
+		SobreCarga n = new SobreCarga();
+		
+		System.out.println(n.suma(2, 3));
+		System.out.println(n.suma(6, 6, 6));
+		System.out.println(n.suma(6.6, 6.6, 6.6));
 		
 		
 	}
